@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <title>MORIYA SEISEKI | 杜屋整積</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-top: 0.25rem;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #cbd5e1;
+            font-size: 0.98rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>MORIYA SEISEKI</h1>
+        <div class="subtitle">杜屋整積 &bull; Software Engineering & Data Services</div>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                <strong>MORIYA SEISEKI (杜屋整積)</strong> is an independent software development entity based in Japan. We engineer cross-platform applications, custom API services, and high-performance data processing tools designed with privacy, performance, and operational efficiency at their core.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Cross-Platform Applications</h3>
+                <p>Developing scalable software solutions across mobile, desktop, and web platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Data & Analytics Pipelines</h3>
+                <p>Building high-performance computation engines, custom APIs, and automated workflows.</p>
+            </div>
+            <div class="card">
+                <h3>Privacy-First Design</h3>
+                <p>Architecting user-controlled data handling, ephemeral processing, and secure integrations.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy; 2026 MORIYA SEISEKI</div>
+        <div>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
