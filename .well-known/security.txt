@@ -1,0 +1,3 @@
+Contact: mailto:support@moriyaseiseki.com
+Signing-Keys: https://www.moriyaseiseki.com/.well-known/keys/id_ed25519_moriyaseiseki_support.pub
+
