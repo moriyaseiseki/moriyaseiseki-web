@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KeepSum: private CSV summaries on your Android phone. Stats, filters and charts, all on your device. No upload, no account, no AI.">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <title>KeepSum: Private CSV Stats | MORIYA SEISEKI</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header img {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            flex-shrink: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        p, li {
+            color: #cbd5e1;
+            font-size: 0.98rem;
+        }
+
+        p + p {
+            margin-top: 0.75rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        ul {
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+
+        .store {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+
+        .trademark {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="./icon.png" alt="KeepSum icon">
+        <div>
+            <h1>KeepSum</h1>
+            <div class="subtitle">Private CSV stats, on your Android device</div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                KeepSum gives you a quick profile of a CSV file, right on your phone: before formal analysis, before a pipeline, or just to check what a file holds. See each column&rsquo;s type and statistics, scroll and filter the table, and draw charts.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Overview</h3>
+                <p>Rows, columns, how complete the data is, and each column&rsquo;s statistics: count, missing, distinct, min, max, mean, median, standard deviation, most common values.</p>
+            </div>
+            <div class="card">
+                <h3>Explorer</h3>
+                <p>The whole table with the header row in view, filtered by text or by a number range.</p>
+            </div>
+            <div class="card">
+                <h3>Charts</h3>
+                <p>Histograms and line charts for numbers; bar charts of the most common values for text.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Private by Design</h2>
+            <ul>
+                <li><strong>On your device only:</strong> files are read and summarized on your phone, never uploaded.</li>
+                <li><strong>No internet:</strong> KeepSum has no internet permission, so it can&rsquo;t send anything anywhere.</li>
+                <li><strong>No account:</strong> no sign-in, no ads, no analytics.</li>
+                <li><strong>No AI:</strong> your data isn&rsquo;t sent to, or read by, any AI service.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Get KeepSum</h2>
+            <p>Android 10 or later.</p>
+            <!-- Replace with the Google Play link once the listing is live (ADR 0017):
+                 https://play.google.com/store/apps/details?id=app.moriyaseiseki.keepsum -->
+            <span class="store">Coming soon</span>
+        </section>
+
+        <section>
+            <h2>Privacy & Support</h2>
+            <p>
+                Read the <a href="./privacy-policy.html">KeepSum Privacy Policy</a> and our general <a href="../../privacy-policy.html">Privacy Policy</a>.
+            </p>
+            <p>
+                Questions or problems: <a href="mailto:google.mobile.service@moriyaseiseki.com">google.mobile.service@moriyaseiseki.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy; 2026 MORIYA SEISEKI</div>
+        <div><a href="./privacy-policy.html">KeepSum Privacy Policy</a> &bull; <a href="../../">Home</a></div>
+    </footer>
+    <p class="trademark">Google Play and Android are trademarks of Google LLC.</p>
+</div>
+
+</body>
+</html>

@@ -105,26 +105,35 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .trademark {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    
+
 
     <header>
         <h1>Privacy Policy</h1>
-        <div class="effective-date">Version 1.1 &bull; Effective Date: September 8, 2026</div>
+        <div class="effective-date">Version 1.2 &bull; Effective Date: November 17, 2026</div>
     </header>
 
     <main>
         <section>
             <h2>1. Business Entity Information & Scope</h2>
             <p>
-                This Privacy Policy applies to all websites, web applications, browser tools, games, custom APIs, and online services provided by <strong>MORIYA SEISEKI (杜屋整積)</strong>, an independent software engineering entity operating under the laws of Japan. This includes, but is not limited to, <strong>moriyaseiseki.com</strong>, <strong>moriyaseiseki-app.com</strong>, and all associated subdomains or digital software properties operated by our entity.
+                This Privacy Policy applies to all websites, web applications, mobile applications, browser tools, games, custom APIs, and online services provided by <strong>MORIYA SEISEKI (杜屋整積)</strong>, an independent software engineering entity operating under the laws of Japan. This includes, but is not limited to, <strong>moriyaseiseki.com</strong>, <strong>moriyaseiseki-app.com</strong>, our mobile applications distributed through app stores such as Google Play, and all associated subdomains or digital software properties operated by our entity.
             </p>
             <p style="margin-top: 0.5rem;">
                 This policy does not apply to custom software development services, professional consulting, or contract engineering performed under separate service agreements or via freelance platforms (e.g., Upwork, Fiverr).
+            </p>
+            <p style="margin-top: 0.5rem;">
+                Some products have their own privacy notice, listed in Section 6. A product&rsquo;s notice describes exactly what that product does with data; where it differs from this policy, the product&rsquo;s notice applies to that product.
             </p>
         </section>
 
@@ -142,14 +151,14 @@
 
         <section>
             <h2>3. Information We Collect & Manage</h2>
-            <p>Depending on how you interact with our products and services, we may collect and handle minimal necessary information, including:</p>
+            <p>Depending on how you interact with our products and services, we may collect and handle minimal necessary information, including the categories below. Not every product collects every category, and some collect none; a product&rsquo;s own notice (Section 6) says which apply to it.</p>
             <ul>
                 <li><strong>Account & Authentication Data:</strong> When you sign up or log in using third-party identity providers (such as Google Sign-In or Apple ID), we receive basic profile details (name, email address, and provider user ID) required to create, verify, and maintain your account.</li>
                 <li><strong>Third-Party Credentials & User API Keys (BYOK):</strong> If you choose to supply your own third-party API keys (e.g., personal OpenAI API key) to power analytical pipelines, these credentials are used solely to authenticate your direct processing requests. User-provided API keys are encrypted and stored locally on your device or transmitted securely in-memory solely for request routing. They are never exposed, sold, or shared.</li>
                 <li><strong>User Inputs & Prompt Payloads:</strong> Data inputs, database table structures, vector index payloads, or textual prompts provided for AI and analytics processing are handled ephemerally. We do not retain prompt contents or generated LLM responses on our servers beyond the lifecycle of the active processing request.</li>
                 <li><strong>Website Access Logs & Infrastructure Data:</strong> When you visit our website, our edge hosting infrastructure (Cloudflare Pages) automatically logs standard server access request details (such as IP address, browser user-agent, requested page path, and timestamp). This information is processed strictly for performance routing, security monitoring, and threat/DDoS mitigation based on our legitimate operational interests.</li>
                 <li><strong>Cookies & Tracking Technologies:</strong> Our primary website is static and does not drop cookies, utilize local tracking storage, or deploy client-side marketing/behavioral analytics scripts across your device.</li>
-                <li><strong>Technical & Service Telemetry:</strong> Anonymized crash logs, system diagnostics, and performance metrics to fix defects and optimize application stability.</li>
+                <li><strong>Technical & Service Telemetry:</strong> Anonymized crash logs, system diagnostics, and performance metrics to fix defects and optimize application stability. For mobile applications distributed through app stores, such statistics may instead be collected by the store or the operating system (for example, Google Play&rsquo;s Android vitals) under their own privacy policies, and shown to us only as reports.</li>
                 <li><strong>Transaction Records:</strong> License validation, API usage metrics, and subscription status data managed securely via accredited payment and digital checkout partners. We do not store or handle full credit card information.</li>
             </ul>
         </section>
@@ -172,7 +181,17 @@
         </section>
 
         <section>
-            <h2>6. Contact & Data Requests</h2>
+            <h2>6. Product-Specific Privacy Notices</h2>
+            <p>
+                The following products have their own privacy notice, which applies to that product in addition to this policy:
+            </p>
+            <ul>
+                <li><strong>KeepSum</strong> (Android app, Google Play): <a href="./mobile/keepsum/privacy-policy.html">KeepSum Privacy Policy</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Contact & Data Requests</h2>
             <p>
                 For questions regarding this Privacy Policy or to exercise your privacy rights, please contact:
             </p>
@@ -181,12 +200,21 @@
                 <strong>Email:</strong> <a href="mailto:support@moriyaseiseki.com">support@moriyaseiseki.com</a>
             </p>
         </section>
+
+        <section>
+            <h2>8. Revision History</h2>
+            <ul>
+                <li><strong>Version 1.2</strong> (November 17, 2026): mobile applications added to the scope (Section 1); product-specific privacy notices added (Sections 1, 3 and 6); app-store crash statistics explained (Section 3).</li>
+                <li><strong>Version 1.1</strong> (September 8, 2026): the previous version.</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <div>&copy; 2026 MORIYA SEISEKI</div>
         <div><a href="./">Back to Home</a></div>
     </footer>
+    <p class="trademark">Google Play and Android are trademarks of Google LLC.</p>
 </div>
 
 </body>
